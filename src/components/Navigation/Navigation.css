@@ -1,0 +1,279 @@
+.open {
+	display: flex !important;
+	align-items: center;
+}
+
+.navigation {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation__container {
+	width: 1140px;
+	height: 74px;
+	display: flex;
+	align-items: center;
+}
+
+.navigation__menu-block {
+	width: 100%;
+	display: flex;
+}
+
+.navigation__menu {
+	margin: 0;
+	margin-left: 50px;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	list-style-type: none;
+}
+
+.navigation__link {
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.navigation__account-btn {
+	margin: 0;
+	padding: 0;
+	height: 32px;
+	width: 100px;
+	border: none;
+	background-color: #202020;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+	box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+}
+
+.navigation__account-btn_icon_container {
+	padding: 0;
+	background-color: #313131;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+}
+
+.burger {
+	width: 28px;
+	height: 28px;
+	margin-right: 30px;
+	display: none;
+	position: relative;
+	z-index: 50;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 7px;
+}
+
+.burger span {
+	height: 3px;
+	width: 100%;
+	transform: scale(1);
+	background-color: #FFF;
+}
+
+.burger span:nth-child(1) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger span:nth-child(2) {
+	top: 18px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger span:nth-child(3) {
+	top: 36px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger.active span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: -3px;
+	left: 8px;
+}
+
+.burger.active span:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 39px;
+	left: 8px;
+}
+
+.navigation__link-active {
+	padding-bottom: 1px;
+	border-bottom: 1px solid #FFF;
+}
+
+.navigation__overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: 1;
+}
+
+@media screen and (min-width: 900px) {
+	.navigation__link-home {
+		display: none;
+	}
+}
+
+@media (max-width: 1139px) {
+	.navigation {
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 899px) {
+	.navigation {
+		margin-right: 30px;
+	}
+
+	.navigation__container {
+		justify-content: space-between;
+		margin-inline: 30px;
+	}
+
+	.burger {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		margin-right: 8px;
+	}
+
+	.navigation__menu-block {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		position: fixed;
+		height: 100%;
+		width: 70%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 50;
+		overflow-y: auto;
+		background-color: #202020;
+		animation: burgerAnimation 0.4s;
+	}
+
+	.navigation__menu {
+		margin: 0;
+		margin-top: 159px;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	.navigation__account-btn {
+		margin-bottom: 90px;
+	}
+
+	.navigation__overlay_open {
+		display: block;
+	}
+}
+
+@media (max-width: 679px) {
+	.navigation {
+		margin-right: 14px;
+	}
+
+	.navigation__menu {
+		margin-top: 144px;
+	}
+
+	.navigation__menu-block {
+		width: 100%;
+	}
+
+	.navigation__account-btn {
+		margin-bottom: 46px;
+	}
+
+}
+
+@media (max-width: 450px) {
+	.burger {
+		margin: 0;
+	}
+
+	.burger span {
+		position: absolute;
+	}
+
+	.burger span:nth-child(2) {
+		top: 9px;
+	}
+
+	.burger span:nth-child(3) {
+		top: 18px;
+	}
+
+	.burger.active span:nth-child(3) {
+		top: 13px;
+	}
+
+	.navigation__burger {
+		width: 22px;
+		margin-right: 8px;
+		height: 22px;
+	}
+
+	.navigation__container {
+		margin-inline: 14px;
+	}
+}
+
+@keyframes burgerAnimation {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}

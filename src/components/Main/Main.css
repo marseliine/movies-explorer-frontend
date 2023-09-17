@@ -1,0 +1,113 @@
+.main__title {
+	margin: 0 auto;
+	margin-top: 159px;
+	padding: 0;
+	max-width: 730px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 58px;
+}
+
+h2.main__title {
+	margin: 0;
+	margin-top: 90px;
+	padding: 0;
+}
+
+.main__header {
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 110px;
+	max-width: 1140px;
+	width: 100%;
+	border-bottom: 1px solid #DADADA;
+}
+
+.main__header_place_techs {
+	padding-top: 100px;
+}
+
+
+.main__subtitle {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 23px;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: normal;
+	letter-spacing: -0.88px;
+}
+
+.main__subtitle_place_techs {
+	font-family: 'Inter';
+}
+
+.main__subtitle_place_header {
+	font-family: 'Inter';
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.88px;
+}
+
+@media (max-width: 899px) {
+	.main__title {
+		max-width: 680px;
+		font-size: 40px;
+		line-height: 52px;
+	}
+
+	.main__header {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.main__header_place_techs {
+		max-width: 668px;
+		padding-top: 90px;
+	}
+
+	.main__header_place_about-me {
+		max-width: 668px;
+		padding-top: 90px;
+	}
+}
+
+@media (max-width: 679px) {
+	.main__title {
+		margin-top: 220px;
+		width: 100%;
+		height: 111px;
+		font-size: 27px;
+		line-height: 37px;
+	}
+
+	.main__subtitle {
+		margin-bottom: 28px;
+	}
+}
+
+@media (max-width: 420px) {
+	.main__header_place_techs {
+		padding-top: 70px;
+		border-bottom: 1px solid #000;
+	}
+
+	.main__subtitle_place_techs {
+		font-size: 18px;
+		letter-spacing: -0.72px;
+	}
+
+	.main__header_place_about-me {
+		padding-top: 70px;
+		max-width: 292px;
+	}
+
+	.main__subtitle_place_about-me {
+		font-size: 18px;
+		letter-spacing: -0.72px;
+	}
+}

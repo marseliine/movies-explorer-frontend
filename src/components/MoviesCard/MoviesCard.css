@@ -1,0 +1,124 @@
+.movie-card {
+	width: 100%;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	background-color: #222;
+	border-radius: 10px;
+	align-items: center;
+	filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.05));
+}
+
+.movie-card__container {
+	width: 246px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	column-gap: 24px;
+}
+
+.movie-card__image {
+	height: 151px;
+	object-fit: cover;
+	width: 270px;
+	border-radius: 10px 10px 0 0;
+}
+
+.movie-card__like {
+	margin: 0;
+	margin-top: 14px;
+	padding: 0;
+	padding-top: 22px;
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	background-image: url(../../images/icons/save.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	cursor: pointer;
+}
+
+.movie-card:hover .movie-card__like {
+	display: block;
+}
+
+.movie-card__like_active {
+	margin: 0;
+	margin-top: 14px;
+	padding: 0;
+	padding-top: 22px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../../images/icons/saved.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	background-color: transparent;
+}
+
+.movie-card__delete {
+	width: 16px;
+	height: 16px;
+	margin-top: 11px;
+	background-image: url(../../images/icons/delete.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	background-color: transparent;
+}
+
+.movie-card__info {
+	margin: 0;
+	margin-block: 14px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	width: 206px;
+}
+
+.movie-card__title {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.movie-card__duration {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 10px;
+	color: #8B8B8B;
+}
+
+@media (max-width: 899px) {
+	.movie-card__image {
+		width: 100%;
+		height: 190px;
+	}
+
+	.movie-card__container {
+		width: 95%;
+		justify-content: space-between;
+		/* column-gap: 93px; */
+	}
+}
+
+@media (max-width: 450px) {
+	.movie-card__container {
+		width: 276px;
+		column-gap: 54px;
+	}
+
+	.movie-card__image {
+		height: 168px;
+	}
+}

@@ -1,0 +1,19 @@
+.header {
+	background-color: #202020;
+	width: 100%;
+}
+
+.header__container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header_color_blue {
+	background-color: #073042;
+}
