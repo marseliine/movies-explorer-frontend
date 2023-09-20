@@ -57,8 +57,9 @@
 .aboutMe__content-item--image,
 .aboutMe__content-item--image > img {
   flex-shrink: 0;
-  max-width: 270px;
+  width: 270px;
   border-radius: 10px;
+  height: 327px;
 }
 
 .aboutMe__content-item--image > img {
