@@ -1,0 +1,149 @@
+.footer {
+	margin: 0 auto;
+	max-width: 1140px;
+	width: 100%;
+	color: #FFF;
+}
+
+.footer__text {
+	margin: 0;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	font-size: 13px;
+	color: #8B8B8B;
+	border-bottom: 1px solid #424242;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__container {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__copyright {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter';
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.footer__nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.footer__nav-link {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	font-size: 13px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: right;
+	font-feature-settings: "liga" 0, "clig" 0;
+}
+
+.footer__text_place_saved-movies {
+	margin-top: 233px;
+}
+
+@media (max-width: 1139px) {
+	.footer__copyright {
+		margin: 0 20px;
+	}
+
+	.footer__nav {
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 899px) {
+	.footer__copyright {
+		margin: 0;
+	}
+
+	.footer__nav {
+		margin-inline: 0;
+	}
+}
+
+@media (max-width: 899px) {
+	.footer {
+		max-width: 708px;
+	}
+
+	.footer__text_place_saved-movies {
+		margin-top: 232px;
+	}
+}
+
+
+@media (max-width: 679px) {
+	.footer {
+		max-width: 600px;
+	}
+
+	.footer__text {
+		font-size: 12px;
+		padding-bottom: 20px;
+	}
+
+	.footer__container {
+		margin: 30px 0;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.footer__nav {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.footer__copyright {
+		margin-top: 30px;
+		font-size: 12px;
+		color: #8B8B8B;
+	}
+}
+
+@media (max-width: 450px) {
+	.footer__text_place_saved-movies {
+		margin-top: 62px;
+	}
+
+	.footer__copyright {
+		margin-top: 23px;
+	}
+}
+
+@media (max-width: 420px) {
+	.footer {
+		max-width: 300px;
+	}
+
+	.footer__container {
+		margin-top: 28px;
+	}
+
+	.footer__nav {
+		gap: 7px;
+	}
+
+	.footer__nav-link {
+		font-size: 12px;
+	}
+}
