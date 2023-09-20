@@ -1,6 +1,0 @@
-.login__input_type_password {
-    color: #EE3465;
-}
-[data-error=true] .login__input_type_password {
-    color: var(--warning-color);
-}
