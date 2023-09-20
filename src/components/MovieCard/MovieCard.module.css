@@ -1,0 +1,95 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #222;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.05);
+}
+
+.movie__preview {
+  width: 100%;
+  height: 151px;
+}
+
+.movie__preview > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie__body {
+  padding: 14px 12px;
+}
+
+.movie__body-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.movie__name {
+  font-weight: 500;
+  margin-right: 24px;
+  flex-grow: 1;
+}
+
+.movie__favorite {
+  width: 16px;
+  height: 16px;
+  display: block;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid var(--primary-text-color);
+  background-color: #313131;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  transition: background-color 0.2s;
+}
+
+.movie__favorite:focus-within {
+  border-color: var(--secondary-accent-color);
+}
+
+.movie__favorite.active {
+  background-color: #2BE080;
+}
+
+.removeButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.removeButton:focus-visible {
+  outline: 1px solid var(--primary-text-color);
+}
+
+.movie__length {
+  font-size: 11px;
+  color: var(--secondary-text-color);
+  display: block;
+}
+
+/* tablet */
+@media (920px >= width > 480px) {
+  .movie {
+    max-width: 400px;
+  }
+  .movie__preview {
+    height: 190px;
+  }
+}
+
+@media (width <= 480px) {
+  .movie {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .movie__preview {
+    height: 168px;
+  }
+}

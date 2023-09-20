@@ -1,0 +1,136 @@
+.register {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header {
+  width: 100%;
+  max-width: 396px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 396px;
+  padding-bottom: 70px;
+}
+
+.register__form-label {
+  font-size: 10px;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+
+.register__form-label:last-of-type {
+  margin-bottom: 0;
+}
+
+.register__form-input {
+  font-size: 13px;
+  color: var(--primary-text-color);
+
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+
+  border-radius: 8px;
+  border: none;
+  background-color: #2F2F2F;
+}
+
+.register__form-input:focus-visible {
+  outline: 1px solid var(--secondary-accent-color);
+}
+
+[data-error=true] .register__form-input {
+  color: var(--warning-color);
+}
+
+.register__form-submitButton {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: inherit;
+
+  padding: 14px;
+  margin-top: 69px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: var(--secondary-accent-color);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.register__form-submitButton:hover,
+.register__form-submitButton:focus-visible {
+  opacity: 0.7;
+}
+
+.register__form-login {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.register__form-loginButton {
+  font-size: 14px;
+  color: var(--secondary-accent-color);
+  margin-left: 6px;
+}
+
+/* tablet */
+@media (920px >= width > 480px) {
+  .header {
+    padding-top: 232px;
+    padding-bottom: 40px;
+  }
+  .register__form {
+    padding-bottom: 232px;
+  }
+}
+
+/* mobile */
+@media (width <= 480px) {
+  .header {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+  .header__logo {
+    justify-content: center;
+  }
+  .header__title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .register__form {
+    padding-bottom: 30px;
+  }
+  .register__form-submitButton {
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 14px;
+    margin-top: auto;
+  }
+  .register__form-login {
+    font-size: 12px;
+  }
+  .register__form-loginButton {
+    font-size: 12px;
+    margin-left: 7px;
+  }
+}
