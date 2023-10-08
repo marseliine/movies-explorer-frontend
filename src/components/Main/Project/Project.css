@@ -1,0 +1,141 @@
+.project {
+  padding: 110px 70px 100px;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 0 0 0;
+  margin: 0;
+  gap: 45px;
+  list-style: none;
+}
+
+.project__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  margin: 0;
+}
+
+.project__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 26px 0 0 0;
+}
+
+.project__stages {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5px 0;
+  padding-top: 110px;
+}
+
+.project__weeks {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 36px;
+  background-color: #303030;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project__weeks-marked {
+  color: black;
+  background-color: #3DDC84;
+}
+
+.project__weeks-description {
+  color: #8B8B8B;
+  display: flex;
+  margin: 10px 0 0 0;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+@media (max-width: 783px) {
+  .project {
+    padding: 90px 50px 81px;
+  }
+
+  .project__info {
+    gap: 33px;
+  }
+
+  .project__text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .project__stages {
+    padding-top: 93px;
+    grid-template-columns: 1.07fr 4fr;
+    gap: 3px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    padding: 71px 18px;
+  }
+
+  .project__title {
+    font-size: 20px;
+  }
+
+  .project__text {
+    font-size: 11px;
+    line-height: 16px
+  }
+
+  .project__info {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project {
+    padding: 68px 18px;
+  }
+
+  .project__title {
+    font-size: 18px;
+  }
+
+  .project__info {
+    padding-top: 60px;
+    gap: 56px;
+    flex-direction: column;
+  }
+
+  .project__text {
+    margin-top: 16px;
+  }
+
+  .project__stages {
+    padding-top: 64px;
+    grid-template-columns: 2.2fr 4fr;
+    grid-template-rows: 23px 15px;
+    row-gap: 11px;
+  }
+
+  .project__weeks {
+    font-size: 11px;
+  }
+
+  .project__weeks-description {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,147 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.card:hover .card__save-text {
+  opacity: 1;
+  display: flex;
+}
+
+.card__img-container {
+  position: relative;
+  padding-bottom: 14px;
+  width: 100%;
+}
+
+.card__img {
+  width: 100%;
+  height: 201px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.card__save-text {
+  width: 72px;
+  height: 21px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #313131;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 3;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 9px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img-container.with-hover:hover .card__save-text {
+  opacity: 1;
+  display: flex;
+}
+
+.card__checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../../../images/cross-grey.svg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 3;
+}
+
+.card__checkmark::before {
+  color: white;
+  font-size: 16px;
+}
+
+.card.is-saved .card__checkmark-red {
+  opacity: 1;
+  background: url(../../../images/check-red.svg);
+}
+
+.card.is-saved .card__checkmark-grey {
+  opacity: 1;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__title {
+  max-width: 250px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding-left: 16px;
+}
+
+.card__duration {
+  padding: 4px 3px;
+  color: #8B8B8B;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  margin: 0;
+  margin-right: 16px;
+  min-width: max-content;
+  width: 44px;
+  max-height: 20px;
+  background-color: #2F2F2F;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 783px) {
+  .card__title {
+    padding-left: 0;
+  }
+
+  .card__img {
+    padding-left: 0;
+    height: 190px;
+  }
+
+  .card__img-container {
+    padding-bottom: 25px;
+  }
+
+  .card__duration {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card__title {
+    font-size: 12px;
+  }
+
+  .card__img {
+    height: 168px;
+  }
+
+  .card__img-container {
+    padding-bottom: 16px;
+  }
+}
