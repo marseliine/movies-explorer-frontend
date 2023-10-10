@@ -4,7 +4,7 @@ function Hero() {
           <h1 className="hero__title">
             Учебный проект студента факультета Веб-разработки.
           </h1>
-          <ul className="hero__list">
+          <nav className="hero__list">
             <li className="hero__item">
               <a className="hero__link" href="#project">
                 О проекте
@@ -20,7 +20,7 @@ function Hero() {
                 Студент
               </a>
             </li>
-          </ul>
+          </nav>
         </section>
     )
   }
