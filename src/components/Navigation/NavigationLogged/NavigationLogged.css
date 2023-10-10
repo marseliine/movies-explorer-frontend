@@ -44,11 +44,21 @@
     padding: 8px 22px;
 }
 
-.navigation__button-btn,
-.navigation__button-cross {
+.navigation__button-btn {
     display: none;
     width: 44px;
     height: 44px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 20px;
+    z-index: 2;
+}
+.navigation__button-cross {
+    display: block;
+    background: url(../../../images/cross.svg);
+    width: 22px;
+    height: 22px;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -60,16 +70,8 @@
     right: 30px;
     background: url(../../../images/burger.svg);
 }
-
-.navigation__button-cross {
-    top: 22px;
-    right: 22px;
-    width: 22px;
-    height: 22px;
-    background: url(../../../images/cross.svg);
-    background-position: center;
-    position: fixed;
-    z-index: 11;
+.navigation__button-cross:hover {
+    opacity: 0.6;
 }
 
 @media (max-width: 860px) {
@@ -80,9 +82,15 @@
     .navigation__button-btn, .navigation__burger-cross {
         display: block;
     }
-    .navigation__button-btn:hover, 
-    .navigation__button-cross:hover {
+    .navigation__button-btn:hover {
         opacity: 0.6;
+    }
+    .navigation__button-cross {
+        top: 22px;
+        right: 22px;
+        background-position: center;
+        position: fixed;
+        z-index: 11;
     }
 }
 
@@ -95,6 +103,8 @@
     .navigation__button-cross {
         top: 18px;
         right: 21px;
+        width: 22px;
+        height: 22px;
         display: block; 
     }
 }
