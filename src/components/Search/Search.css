@@ -55,7 +55,7 @@
 }
 
 .search__btn {
-  margin: 0;
+  margin-right: 18px;
   padding: 8px 10px;
   font-size: 11px;
   line-height: 18px;
@@ -94,6 +94,8 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
+  margin-top: -7px;
+  margin-left: -4px;
   transition: background .2s ease-out;
 }
 
