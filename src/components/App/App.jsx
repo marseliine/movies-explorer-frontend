@@ -37,7 +37,7 @@ function App() {
             />
             
              <Route
-              path='error'
+              path='*'
               element={<Error />}
             />
 
