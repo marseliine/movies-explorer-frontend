@@ -55,7 +55,6 @@
       grid-template-columns: repeat(2, minmax(1%, 1fr));
       row-gap: 45px;
       max-height: calc(4 * (231px + 47px)); 
-      overflow: hidden;
       height: auto;
   }
 }
