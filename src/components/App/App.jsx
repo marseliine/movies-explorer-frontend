@@ -12,7 +12,7 @@ import Profile from "../Profile/Profile";
 function App() {
   return (
     <CurrentContext.Provider value={{}}>
-      <div className="page">
+      <main className="page">
         <>
           <Routes>
 
@@ -52,7 +52,7 @@ function App() {
             />
           </Routes>
         </>
-      </div>
+      </main>
     </CurrentContext.Provider>
   );
 }
