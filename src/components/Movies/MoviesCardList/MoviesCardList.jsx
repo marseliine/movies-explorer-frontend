@@ -11,7 +11,7 @@ function CardList({ cardList, isSavedPage }) {
             key={card.movieId}
             movieId={card.movieId}
             duration={card.duration}
-            image={card.image}
+            image={card.link}
             name={card.nameRU}
             isSavedPage={isSavedPage}
           />
