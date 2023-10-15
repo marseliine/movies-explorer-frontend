@@ -1,0 +1,134 @@
+.technologies {
+  padding: 110px 70px 100px;
+  background: #272727;
+}
+
+.technologies__title {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 90px;
+  margin: 0;
+}
+
+.technologies__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 26px;
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+.technologies__list {
+  max-width: 690px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 100px;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.technologies__item {
+  min-width: 90px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  border-radius: 10px;
+  background: #303030;
+}
+
+@media (max-width: 783px) {
+  .technologies {
+    padding: 92px 50px;
+  }
+
+  .technologies__title {
+    padding: 82px 0 20px;
+  }
+
+  .technologies__text {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+    padding-bottom: 85px;
+    padding-top: 0px;
+  }
+
+  .technologies__list {
+    flex-wrap: wrap;
+    padding-top: 0px;
+
+  }
+
+  .technologies__item {
+    min-width: 84px;
+    min-height: 57px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .technologies {
+    padding: 70px 14px;
+  }
+
+  .technologies__title {
+    font-size: 30px;
+    letter-spacing: -1.2px;
+  }
+
+  .technologies__text {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+  }
+
+  .technologies__item {
+    width: 84px;
+    height: 57px;
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+
+  .technologies__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .technologies {
+    padding: 80px 18px;
+    background-color: #202020;
+  }
+
+  .technologies__title {
+    padding: 49px 0 12px;
+  }
+
+  .technologies__list {
+    max-width: 178px;
+    justify-content: flex-start;
+  }
+
+  .technologies__text {
+    padding-bottom: 50px;
+  }
+}
