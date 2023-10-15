@@ -3,5 +3,3 @@
 макет dark-2 https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/Дипломный-проект?type=design&node-id=1-7266&mode=design&t=1OFgjCK3eQHivSYt-0
 
 Ссылка на Pull Request - 
-
-Ссылка на проект - https://yamovies.nomoredomainsicu.ru/
