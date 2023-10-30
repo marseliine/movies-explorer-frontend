@@ -102,7 +102,10 @@ function MoviesCardList({
         <>
           <ul className={'card-list'}>
             {location.pathname === '/saved-movies'
-              ? sortedSavedMovies.map((card) => (
+              ? (sortedSavedMovies.length === 0
+                  ? savedMovies
+                  : sortedSavedMovies
+                ).map((card) => (
                   <MoviesCard
                     movieSaved={getSavedMovie(savedMovies, card)}
                     savedMovies={savedMovies}
