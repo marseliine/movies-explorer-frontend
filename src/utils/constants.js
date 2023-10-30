@@ -1,5 +1,5 @@
 export const REACT_APP_API_MAIN_URL =
-  'https://api.best-movies-explorer.nomoredomains.xyz';
+  'https://api.movies.marseliine.nomoredomainsrocks.ru';
 // 'http://localhost:4000';
 
 export const REACT_APP_API_MOVIES_URL =
