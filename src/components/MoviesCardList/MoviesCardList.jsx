@@ -125,7 +125,6 @@ function MoviesCardList({
                       movies={movies}
                       isSavedMovies={isSavedMovies}
                       key={card._id || card.id}
-                      card={card}
                       handleSaveMovie={handleSaveMovie}
                       handleDeleteMovie={handleDeleteMovie}
                       sortedMovies={sortedMovies}
