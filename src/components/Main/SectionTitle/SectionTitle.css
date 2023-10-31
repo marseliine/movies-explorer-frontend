@@ -1,0 +1,21 @@
+.section-title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #DADADA;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    padding-bottom: 28px;
+  }
+}

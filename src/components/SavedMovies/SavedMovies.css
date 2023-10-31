@@ -1,0 +1,22 @@
+.movies__saved-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies__saved {
+  align-items: center;
+  padding-bottom: 242px;
+}
+
+@media (max-width: 783px) {
+  .movies__saved {
+    padding: 0px 15px 177px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .movies__saved {
+    padding: 80px 10px 153px;
+    align-items: center;
+  }
+}

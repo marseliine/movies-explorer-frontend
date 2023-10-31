@@ -1,0 +1,22 @@
+.header {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 17px 70px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #202020;
+  ;
+}
+
+@media (max-width: 783px) {
+  .header {
+    padding: 18px 10px 18px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 18px 14px 18px 14px;
+  }
+}
