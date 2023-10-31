@@ -1,0 +1,172 @@
+.search-form__center {
+  display: flex;
+  max-width: 1140px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 28px;
+  position: relative;
+  padding: 80px 70px 0;
+}
+
+
+/* псевдоэлемент для полоски */
+.search-form__center::after {
+  content: "";
+  width: calc(100% - 140px);
+  height: 1px;
+  background-color: #424242;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+
+
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+}
+
+.search-form__container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.search-form__input {
+  margin: 0;
+  padding: 16px 20px;
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  border: none;
+  background-color: #2F2F2F;
+  border-radius: 8px;
+  transition: border .2s ease-out;
+}
+
+.search-form__input:focus {
+  outline: none;
+  border: 1.5px solid white;
+}
+
+.search-form__btn {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 44px;
+  height: 44px;
+  background: url(../../images/find-btn.svg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-form__btn:hover {
+  opacity: 0.6;
+}
+
+.search-form__toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+
+.search-form__checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.search-form__toggle {
+  width: 34px;
+  height: 14px;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+/* кружок внутри бегунка */
+.search-form__toggle::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  transition: background .2s ease-out, left .2s ease-out;
+}
+
+/* cдвигаем кружок при нажатии */
+.search-form__checkbox:checked+.search-form__toggle::before {
+  left: 22px;
+}
+
+.search-form__checkbox:checked+.search-form__toggle {
+  background: #3DDC84; /* меняем цвет бегунка  при нажатии */
+}
+
+.search-form__error-text {
+  padding-top: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #EE3465;
+}
+
+.search-form__short-film-text {
+  margin-left: 11px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 783px) {
+  .search-form__center {
+    padding: 80px 0 0 0;
+  }
+
+  .search-form__toggle-container {
+    margin-top: 28px;
+  }
+
+  .search-form__center::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-form__center {
+    padding-top: 0;
+  }
+
+  .search-form__input {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+  }
+
+  .search-form__toggle-container {
+    margin-top: 32px;
+  }
+
+  .search-form__short-film-text {
+    margin-left: 13px;
+  }
+}
