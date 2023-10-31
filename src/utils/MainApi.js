@@ -1,6 +1,6 @@
 class MainApi {
   constructor() {
-    this.baseUrl = 'https://api.movies.marseliine.nomoredomainsrocks.ru/';
+    this.baseUrl = 'https://api.yamovies.nomoredomainsicu.ru/';
   }
 
   _checkResponse(res) {
