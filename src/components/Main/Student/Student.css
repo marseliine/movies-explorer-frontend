@@ -1,0 +1,139 @@
+.student {
+  padding: 110px 70px 101px;
+}
+
+.student__container {
+  padding-top: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.student__name {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+.student__occupation {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  font-feature-settings: 'clig'off, 'liga'off;
+  margin: 0;
+  padding-bottom: 26px;
+}
+
+.student__info {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  max-width: 600px;
+  padding-bottom: 99px;
+}
+
+.student__github {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.student__photo {
+  width: 270px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  align-self: flex-start;
+
+}
+
+@media (max-width: 783px) {
+  .student {
+    padding: 88px 50px 0px;
+  }
+
+  .student__name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .student__occupation {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 20px;
+  }
+
+  .student__info {
+    max-width: 360px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 86px;
+  }
+
+  .student__photo {
+    width: 255px;
+    height: 307px;
+  }
+
+  .student__github {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .student {
+    padding: 70px 14px;
+  }
+
+  .student__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 60px;
+    gap: 40px;
+  }
+
+  .student__photo {
+    min-width: 292px;
+    min-height: 352px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .student {
+    padding: 62px 14px 72px;
+  }
+
+  .student__container {
+    gap: 40px;
+  }
+
+  .student__name {
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    padding-bottom: 0px;
+  }
+
+  .student__occupation {
+    font-size: 11px;
+    padding-top: 15px;
+  }
+
+  .student__info {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 38px;
+  }
+
+}
